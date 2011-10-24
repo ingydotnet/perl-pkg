@@ -1,0 +1,12 @@
+This is the basic Perl module template.
+
+It should likely be installed under your main pkg/ directory.
+
+For example:
+
+    cd $HOME/src/pkg/
+    git clone https://github.com/rafl/perl-pkg.git perl
+    edit perl/pkg.conf
+    cd $HOME/src/
+    pkg new --from=pkg/perl --module=Foo::Bar foo-bar-pm
+
