@@ -6,12 +6,12 @@ use [% perl.version %];
 use ExtUtils::MakeMaker;
  
 my %WriteMakefileArgs = (
-  NAME => "[% module.name %]",
-#   DISTNAME => "App-psst",
-  ABSTRACT => '[% abstract %]',
-  VERSION => "[% version %]",
+  NAME => '[% module.name %]',
+  DISTNAME => '[% dist.name %]',
+  ABSTRACT => "[% abstract %]",
+  VERSION => '[% version %]',
   AUTHOR => '[% author.name %] <[% author.email %]>',
-  LICENSE => "[% perl.license %]",
+  LICENSE => '[% license.type %]',
 );
  
 WriteMakefile(%WriteMakefileArgs);

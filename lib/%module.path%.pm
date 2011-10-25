@@ -1,6 +1,6 @@
 use [% perl.version %];
 use strict;
-[% IF perl.version >= 5.6 %]use warnings;[% END %]
+[% IF perl.version >= 5.006 %]use warnings;[% END %]
 
 package [% module.name %];
 
@@ -28,7 +28,7 @@ our $VERSION = '[% version %]';
 
 Copyright (c) [% date.year %]. [% author.name %].
 
-[% IF license == 'perl' -%]
+[% IF license.type == 'perl' -%]
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
 
